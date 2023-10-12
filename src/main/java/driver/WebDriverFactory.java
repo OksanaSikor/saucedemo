@@ -8,7 +8,10 @@ import org.openqa.selenium.chromium.ChromiumDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
+
+import static utils.Waiter.WAIT_2_SECONDS;
 
 public class WebDriverFactory {
 
@@ -37,7 +40,8 @@ public class WebDriverFactory {
             }
         }
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WAIT_2_SECONDS));
+//        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         return driver;
     }
 }
