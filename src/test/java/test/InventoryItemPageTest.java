@@ -1,5 +1,8 @@
 package test;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Issue;
+import io.qameta.allure.TmsLink;
 import model.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
@@ -19,7 +22,10 @@ public class InventoryItemPageTest extends BaseTest{
         user = new User();
     }
 
-    @Test
+    @Test(description="Checking the possibility of continuing purchases")
+    @Description("Purchase continuation verification process")
+    @Issue("ISSUE-222")
+    @TmsLink("TMS-13")
     public void checkReturnToHomePage() {
         InventoryPageService inventoryPageService = loginPageService.login(user);
         inventoryPageService.navigateToProductPage();

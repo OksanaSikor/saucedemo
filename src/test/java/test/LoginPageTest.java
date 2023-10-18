@@ -11,7 +11,7 @@ import service.LoginPageService;
 
 public class LoginPageTest extends BaseTest{
 
-    private LoginPageService loginPageService;
+    private LoginPageService  loginPageService;
     private User user;
 
     @BeforeTest
