@@ -2,7 +2,6 @@ package service;
 
 import io.qameta.allure.Step;
 import page.InventoryItemPage;
-import page.InventoryPage;
 
 public class InventoryItemPageService {
 

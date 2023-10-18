@@ -4,15 +4,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.chromium.ChromiumDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
 
-import static utils.Waiter.WAIT_2_SECONDS;
+import static utils.Waiter.WAIT_5_SECONDS;
 
 public class WebDriverFactory {
 
@@ -41,7 +39,7 @@ public class WebDriverFactory {
             }
         }
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WAIT_2_SECONDS));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WAIT_5_SECONDS));
         return driver;
     }
 }

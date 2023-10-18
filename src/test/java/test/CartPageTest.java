@@ -8,7 +8,6 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import service.CartPageService;
-import service.InventoryItemPageService;
 import service.InventoryPageService;
 import service.LoginPageService;
 
