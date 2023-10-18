@@ -12,15 +12,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <aspectjweaver.version>1.9.6</aspectjweaver.version>
-        <allure-maven.version>2.12.0</allure-maven.version>
-        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
-        <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
-        <allure-testng.version>2.8.0</allure-testng.version>
-        <selenium-java.version>4.4.0</selenium-java.version>
-        <webdrivermanager.version>5.4.1</webdrivermanager.version>
-        <aspectjweaver.version>1.9.6</aspectjweaver.version>
-        <testng.version>7.0.0</testng.version>
+
 
     </properties>
 
